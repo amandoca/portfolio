@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 
 // https://vite.dev/config/
-export default defineConfig(({ command }) => ({
+export default defineConfig({
   plugins: [
     react({
       babel: {
@@ -14,7 +14,7 @@ export default defineConfig(({ command }) => ({
     }),
     tailwindcss(),
   ],
-  base: command === "build" ? "/portfolio/" : "/",
+  base: "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -23,4 +23,4 @@ export default defineConfig(({ command }) => ({
   build: {
   chunkSizeWarningLimit: 1000,
 },
-}))
+})
