@@ -2,6 +2,7 @@
 
 Portfolio pessoal baseado em React, Vite, TypeScript e Tailwind CSS.
 
+Repositório: https://github.com/amandoca/portfolio
 
 ## Como rodar
 
