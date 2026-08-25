@@ -1,215 +1,76 @@
 {
-  "navbar": {
-    "home": "Home",
-    "resume": "Currículo",
-    "projects": "Projetos",
-    "menu": "MENU",
-    "menu_description": "Menu de navegação lateral para dispositivos móveis.",
-    "aria_menu_open": "Abrir menu",
-    "aria_nav": "Navegação principal",
-    "aria_home": "Ir para a página inicial",
-    "aria_resume": "Ir para a página de currículo",
-    "aria_projects": "Ir para a página de projetos"
+  "error404": {
+    "back_home": "Voltar ao início",
+    "back_home_aria": "Voltar para a página inicial",
+    "description": "Parece que você tentou acessar uma rota que não existe ou foi movida.",
+    "title": "Página não encontrada"
   },
-  "coffee": {
-    "button_label": "Mostrar frase sobre café",
-    "messages": [
-      "Café na mesa, foco de volta.",
-      "Um gole e a ideia apareceu.",
-      "Pausa curta. Código melhor.",
-      "Café aceito. Próxima tarefa.",
-      "Agora dá para pensar com calma."
-    ]
+  "error500": {
+    "description": "Ocorreu um erro ao carregar os dados. Por favor, tente novamente mais tarde.",
+    "retry_aria": "Recarregar a página",
+    "retry_button": "Tentar novamente",
+    "title": "Erro inesperado"
   },
-  "theme": {
-    "activate_dark": "Ativar tema escuro",
-    "activate_light": "Ativar tema claro",
-    "toggle": "Alternar tema"
+  "footer": {
+    "aria_label": "Rodapé",
+    "rights": "Todos os direitos reservados."
   },
   "home": {
-    "role": "Desenvolvedora front-end,\ninteressada em QA, UX/UI e em criar interfaces bonitas.",
-    "greeting": "Olá, eu sou",
-    "description": "// Desenvolvedora <1>front-end</1> e aprendendo <1>QA</1>, transformando café em <1>código</1> e bugs em <1>casos de teste</1>.",
-    "download_cv": "DOWNLOAD CV",
-    "stats": {
-      "experience": "Anos de <1/> experiência",
-      "projects": "Projetos <1/> robustos",
-      "repositories": "Repositórios",
-      "commits": "Total de <1/> Commits"
-    },
     "aria": {
       "download": "Baixar currículo",
-      "linkedin": "Visite meu LinkedIn",
-      "github": "Visite meu GitHub",
       "exp_label": "3 anos de experiência",
+      "github": "Visite meu GitHub",
+      "linkedin": "Visite meu LinkedIn",
       "proj_label": "Mais de 6 projetos"
+    },
+    "description": "// Desenvolvedora <1>front-end</1> e aprendendo <1>QA</1>, transformando café em <1>código</1> e bugs em <1>casos de teste</1>.",
+    "download_cv": "DOWNLOAD CV",
+    "greeting": "Olá, eu sou",
+    "role": "Desenvolvedora front-end,\ninteressada em QA, UX/UI e em criar interfaces bonitas.",
+    "stats": {
+      "commits": "Total de <1/> Commits",
+      "experience": "Anos de <1/> experiência",
+      "projects": "Projetos <1/> robustos",
+      "repositories": "Repositórios"
     }
   },
-  "resume": {
-    "title_main": "Meu",
-    "title_highlight": "Currículo",
-    "nav": {
-      "about": "Sobre Mim",
-      "experience": "Experiência",
-      "skills": "Habilidades",
-      "education": "Formação"
-    },
-    "download": {
-      "label": "DOWNLOAD CV COMPLETO",
-      "aria": "Baixar currículo completo em PDF"
-    },
-    "about": {
-      "title": "Sobre Mim",
-      "role": "// Software Developer | Front-end | Explorando o mundo QA",
-      "stats": {
-        "productivity": {
-          "value": "Vue.js, React",
-          "label": "Experiência com desenvolvimento front-end e interfaces web"
-        },
-        "performance": {
-          "value": "QA",
-          "label": "Estudos em testes, boas práticas e qualidade de software"
-        },
-        "process": {
-          "value": "UI/UX",
-          "label": "Interesse em interfaces bonitas, acessíveis e com boa experiência de uso"
-        }
-      },
-      "description": {
-        "p1": "Olá! Me chamo <1>Amanda Souza</1>, sou desenvolvedora front-end e pós-graduanda em <1>Engenharia de Software</1> pela Universidade de São Paulo (USP). Sou graduada em <1>Análise e Desenvolvimento de Sistemas</1> pelo Instituto Federal de São Paulo (IFSP) e técnica em Informática pela FIEB."
-      },
-      "expertise": {
-        "title": "Foco de Atuação",
-        "text": "Tenho interesse especial por desenvolvimento <1>front-end</1>, interfaces acessíveis e qualidade de software. Possuo experiência com <1>Vue.js</1>, <1>React</1>, <1>JavaScript</1>, <1>HTML</1>, <1>CSS</1> e consumo de serviços back-end. Também estou aprofundando meus estudos em <1>QA</1>, com foco em testes, boas práticas e melhoria contínua da qualidade das aplicações."
-      },
-      "soft_skills": {
-        "title": "Soft Skills",
-        "items": [
-          "Atenção aos detalhes",
-          "Comunicação clara",
-          "Organização",
-          "Aprendizado contínuo",
-          "Resolução de problemas",
-          "Autonomia",
-          "Colaboração",
-          "Foco em qualidade",
-          "Responsabilidade nas entregas"
-        ]
-      }
-    },
-    "experience": {
-      "title": "Trajetória Profissional",
-      "items": {
-        "backend": {
-          "period": "Novembro de 2023 - Atual",
-          "role": "Desenvolvedora front-end",
-          "company": "Portal Telemedicina • Barueri, São Paulo, Brasil",
-          "stack": "Vue.js | React | Figma | JavaScript | HTML | CSS | APIs | Sustentação | Front-end | QA | Cypress | Testes E2E",
-          "activities": [
-            "Atuação no desenvolvimento front-end de aplicações voltadas à área da saúde, com foco em interfaces funcionais, acessíveis e bem estruturadas para gestores e profissionais de saúde.",
-            "Membro da equipe de desenvolvimento com uso de metodologia ágil.",
-            "Sustentação de um projeto em Vue.js que futuramente será legado, realizando manutenção, ajustes e evolução de telas existentes.",
-            "Participação na transferência/evolução do novo projeto para React, seguindo prototipagem no Figma e contribuindo para interfaces componentizadas, organização visual e evolução da base front-end.",
-            "Criação de POCs (provas de conceito) para validar soluções, fluxos de interface e viabilidade técnica antes da evolução para implementação final.",
-            "Manutenção e evolução de aplicações com Vue.js, React, JavaScript, HTML e CSS, além do consumo de serviços back-end para integração entre telas e regras de negócio.",
-            "Criação e manutenção de testes E2E com Cypress para validação de fluxos críticos da aplicação.",
-            "Análise e desenvolvimento de software considerando segurança, escalabilidade, testes automatizados e arquitetura orientada a microsserviços.",
-            "Desenvolvimento seguindo boas práticas, padrões de código e fluxo ágil, com atenção à qualidade, usabilidade e melhoria contínua das aplicações.",
-            "Apoio à qualidade das entregas por meio da identificação de bugs, análise de fluxos e atenção à experiência do usuário."
-          ]
-        },
-        "frontend": {
-          "period": "Agosto de 2021 - Outubro de 2023",
-          "role": "Analista de Sistemas Jr / Estagiária Desenvolvedora de Sistemas",
-          "company": "Fundação Bradesco • Osasco, São Paulo, Brasil",
-          "stack": "Front-end | Metodologia ágil | Escola Virtual | Desenvolvimento de cursos",
-          "activities": [
-            "Membro da equipe de desenvolvimento front-end com uso de metodologia ágil.",
-            "Colaboração no desenvolvimento dos cursos da Fundação Bradesco e em manutenções do site Escola Virtual.",
-            "Identificação de oportunidades de melhoria por meio de boas práticas em desenvolvimento de sistemas.",
-            "Suporte a questões técnicas, orientando e auxiliando na execução de soluções."
-          ]
-        },
-        "support": {
-          "period": "Outubro de 2018 - Agosto de 2021",
-          "role": "Técnico de Suporte Helpdesk",
-          "company": "Grupo Del Rey",
-          "stack": "Helpdesk | Suporte Técnico | Bilhetagem eletrônica | Infraestrutura | Atendimento",
-          "activities": [
-            "Atuação com suporte técnico e helpdesk, realizando atendimento e resolução de problemas para usuários.",
-            "Contato com fornecedores de produtos para acompanhamento e solução de demandas técnicas.",
-            "Suporte em bilhetagem eletrônica, reparos, configurações de equipamentos e manutenção operacional.",
-            "Experiência inicial importante para desenvolver visão de suporte, diagnóstico de problemas e comunicação com usuários."
-          ]
-        }
-      },
-      "international": {
-        "title": "Trajetória Internacional",
-        "period": "Maio de 2023",
-        "role": "Vice-campeã da Huawei ICT Competition Global Final (2022-2023)",
-        "company": "Huawei • Shenzhen, Cantão, China",
-        "stack": "Innovation | Tech Care | Assistente de Voz Web | Saúde | Competição Global",
-        "activities": [
-          "Participação presencial na Huawei ICT Competition Global Final, na categoria Innovation, em Shenzhen, China.",
-          "Apresentação do projeto Tech Care, assistente virtual direcionado a médicos durante procedimentos cirúrgicos.",
-          "A aplicação permitia consultar imagens laboratoriais por comandos de voz, trazendo mais praticidade para cirurgiões.",
-          "Conquista do 2º lugar mundial na categoria, representando o IFSP e o Brasil na etapa global.",
-          "Matéria IFSP: estudantes do Câmpus Guarulhos finalistas da Huawei ICT Competition - https://ifsp.edu.br/noticias/3722-estudantes-do-campus-guarulhos-sao-finalistas-da-huawei-ict-competition",
-          "Matéria IFSP: Academias do IFSP conecta alunos e empresas de tecnologia - https://www.ifsp.edu.br/eleicoes-coned-2024/17-ultimas-noticias/3840-academias-do-ifsp-conecta-alunos-e-grandes-empresas-de-tecnologia",
-          "Publicação no LinkedIn sobre a Huawei ICT Competition - https://lnkd.in/p/d6Xav4au"
-        ]
-      }
-    },
-    "skills": {
-      "title": "Habilidades Técnicas",
-      "subtitle": "// Competências em front-end, análise, dados, QA e UX/UI.",
-      "frontend": "Front-End & Interface",
-      "backend": "Ferramentas & Qualidade",
-      "ecosystem": "Práticas, Dados e Interesses"
-    },
-    "education": {
-      "title": "Educação & Certificados",
-      "check": "Verificar",
-      "items": [
-        {
-          "date": "Maio de 2025 - Março de 2027",
-          "title": "Pós-graduação Lato Sensu em Engenharia de Software",
-          "subtitle": "Universidade de São Paulo (USP)",
-          "link": "https://www.linkedin.com/in/amandalopesdesouza/"
-        },
-        {
-          "date": "Março de 2021 - Dezembro de 2023",
-          "title": "Análise e Desenvolvimento de Sistemas",
-          "subtitle": "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP)",
-          "link": "https://www.linkedin.com/in/amandalopesdesouza/"
-        },
-        {
-          "date": "Fevereiro de 2019 - Junho de 2020",
-          "title": "Ensino Técnico em Informática",
-          "subtitle": "FIEB - Fundação Instituto de Educação de Barueri",
-          "link": "https://www.linkedin.com/in/amandalopesdesouza/"
-        }
-      ]
-    }
+  "loading": {
+    "sr_text": "Carregando conteúdo",
+    "visible_text": "// Carregando dados do terminal"
+  },
+  "navbar": {
+    "aria_home": "Ir para a página inicial",
+    "aria_menu_open": "Abrir menu",
+    "aria_nav": "Navegação principal",
+    "aria_projects": "Ir para a página de projetos",
+    "aria_resume": "Ir para a página de currículo",
+    "home": "Home",
+    "menu": "MENU",
+    "menu_description": "Menu de navegação lateral para dispositivos móveis.",
+    "projects": "Projetos",
+    "resume": "Currículo"
   },
   "projects": {
-    "title_main": "Meus",
-    "title_highlight": "Projetos",
+    "accessLive": "Acessar o deploy do projeto {{title}}",
+    "accessProject": "Acesse o projeto",
     "carousel": {
       "aria_label": "Lista de projetos em carrossel",
-      "role_description": "carrossel",
-      "prev": "Projeto anterior",
-      "next": "Próximo projeto",
       "first": "Primeiro projeto",
       "last": "Último projeto",
-      "pagination": "Ir para o projeto {{index}}"
+      "next": "Próximo projeto",
+      "pagination": "Ir para o projeto {{index}}",
+      "prev": "Projeto anterior",
+      "role_description": "carrossel"
     },
+    "github": "GitHub",
     "list": [
       {
-        "id": 1,
-        "title": "Web POS",
-        "status": "in-progress",
         "description": "Sistema POS web para operação de vendas e painel administrativo, desenvolvido com React, TypeScript, Vite e Firebase. O projeto também é usado para estudar controle de estado com TanStack Query, Redux e Redux Saga.",
+        "githubUrl": "https://github.com/amandoca/web-pos",
+        "id": 1,
+        "isPrivate": false,
+        "liveUrl": "",
+        "status": "in-progress",
         "tags": [
           "React",
           "TypeScript",
@@ -222,15 +83,15 @@
           "Front-end",
           "Painel administrativo"
         ],
-        "githubUrl": "https://github.com/amandoca/web-pos",
-        "liveUrl": "",
-        "isPrivate": false
+        "title": "Web POS"
       },
       {
-        "id": 2,
-        "title": "Gerenciador de Tarefas",
-        "status": "completed",
         "description": "Aplicação full stack para gerenciamento de tarefas em Kanban, com colaboração entre usuários, autenticação JWT, Vue.js, Node.js, Express e MySQL. Projeto focado em organização de fluxo, produtividade e integração entre front-end e back-end.",
+        "githubUrl": "https://github.com/amandoca/gerenciador-de-tarefas",
+        "id": 2,
+        "isPrivate": false,
+        "liveUrl": "",
+        "status": "completed",
         "tags": [
           "Vue.js",
           "Node.js",
@@ -241,15 +102,15 @@
           "Cypress",
           "Docker"
         ],
-        "githubUrl": "https://github.com/amandoca/gerenciador-de-tarefas",
-        "liveUrl": "",
-        "isPrivate": false
+        "title": "Gerenciador de Tarefas"
       },
       {
-        "id": 3,
-        "title": "Speech to Text APIs",
-        "status": "completed",
         "description": "POCs para comparar APIs de Speech-to-Text com Amazon Transcribe, Azure Speech, Google Cloud Speech-to-Text e OpenAI Whisper. O projeto explora integração com serviços externos e análise de alternativas técnicas para transcrição de áudio.",
+        "githubUrl": "https://github.com/amandoca/Speech-to-Text-APIs",
+        "id": 3,
+        "isPrivate": false,
+        "liveUrl": "",
+        "status": "completed",
         "tags": [
           "JavaScript",
           "Node.js",
@@ -260,15 +121,15 @@
           "Azure Speech",
           "Amazon Transcribe"
         ],
-        "githubUrl": "https://github.com/amandoca/Speech-to-Text-APIs",
-        "liveUrl": "",
-        "isPrivate": false
+        "title": "Speech to Text APIs"
       },
       {
-        "id": 4,
-        "title": "Formação UX Designer DIO",
-        "status": "completed",
         "description": "Desafios práticos da Formação UX Designer da DIO, com wireframe, design system e protótipo navegável criados no Figma para uma loja online de livros. Projeto voltado à prática de UX/UI, estrutura visual e prototipação.",
+        "githubUrl": "https://github.com/amandoca/formacao-ux-designer-dio",
+        "id": 4,
+        "isPrivate": false,
+        "liveUrl": "",
+        "status": "completed",
         "tags": [
           "UX Design",
           "UI Design",
@@ -278,15 +139,15 @@
           "Protótipo",
           "DIO"
         ],
-        "githubUrl": "https://github.com/amandoca/formacao-ux-designer-dio",
-        "liveUrl": "",
-        "isPrivate": false
+        "title": "Formação UX Designer DIO"
       },
       {
-        "id": 5,
-        "title": "Sistema de Tarefas",
-        "status": "completed",
         "description": "API REST para gerenciamento de usuários e tarefas, desenvolvida com C#, ASP.NET Core Web API, Entity Framework Core e SQL Server. Projeto com foco em estrutura back-end, endpoints, persistência de dados e documentação com Swagger.",
+        "githubUrl": "https://github.com/amandoca/SistemaDeTarefas",
+        "id": 5,
+        "isPrivate": false,
+        "liveUrl": "",
+        "status": "completed",
         "tags": [
           "C#",
           "ASP.NET Core",
@@ -296,15 +157,15 @@
           "REST API",
           "Swagger"
         ],
-        "githubUrl": "https://github.com/amandoca/SistemaDeTarefas",
-        "liveUrl": "",
-        "isPrivate": false
+        "title": "Sistema de Tarefas"
       },
       {
-        "id": 6,
-        "title": "Bilhetagem Eletrônica",
-        "status": "completed",
         "description": "Projeto web sobre bilhetagem eletrônica. A aplicação funciona como um CRUD para gerenciamento de dados do sistema, permitindo cadastrar, listar, editar e excluir registros relacionados à operação de bilhetagem, com estrutura em ASP.NET MVC, C#, Entity Framework e SQL Server.",
+        "githubUrl": "https://github.com/amandoca/TCC_ITB_Bilhetagem_Eletronica",
+        "id": 6,
+        "isPrivate": false,
+        "liveUrl": "",
+        "status": "completed",
         "tags": [
           "ASP.NET MVC",
           "C#",
@@ -317,14 +178,15 @@
           "CRUD",
           "TCC"
         ],
-        "githubUrl": "https://github.com/amandoca/TCC_ITB_Bilhetagem_Eletronica",
-        "liveUrl": "",
-        "isPrivate": false
+        "title": "Bilhetagem Eletrônica"
       },
       {
-        "title": "Web Ada",
-        "status": "completed",
         "description": "Aplicação web iniciada em equipe para a Huawei ICT Competition e posteriormente evoluída como Trabalho de Conclusão de Curso. O sistema ADA apoia profissionais da saúde na visualização de informações do paciente e imagens de exames por comandos de voz, incluindo o comando \"ADA\", integração com APIs externas e serviços AWS via Amazon API Gateway. Repositório privado no GitHub por ser fork do projeto original.",
+        "githubUrl": "https://github.com/amandoca/web-ada",
+        "id": 7,
+        "isPrivate": true,
+        "liveUrl": "",
+        "status": "completed",
         "tags": [
           "Angular",
           "TypeScript",
@@ -337,44 +199,194 @@
           "Amazon API Gateway",
           "APIs"
         ],
-        "githubUrl": "https://github.com/amandoca/web-ada",
-        "liveUrl": "",
-        "id": 7,
-        "isPrivate": true
+        "title": "Web Ada"
       }
     ],
+    "liveDeploy": "Deploy do projeto",
     "preview": "Preview do {{title}}",
-    "accessProject": "Acesse o projeto",
-    "usedTech": "Tecnologias utilizadas:",
+    "private": "Privado",
     "status": {
       "completed": "Completo",
       "in-progress": "Em progresso",
       "maintenance": "Manutenção"
     },
-    "viewGithub": "Ver projeto {{title}} no GitHub",
-    "github": "GitHub",
-    "liveDeploy": "Deploy do projeto",
-    "accessLive": "Acessar o deploy do projeto {{title}}",
-    "private": "Privado"
+    "title_highlight": "Projetos",
+    "title_main": "Meus",
+    "usedTech": "Tecnologias utilizadas:",
+    "viewGithub": "Ver projeto {{title}} no GitHub"
   },
-  "loading": {
-    "sr_text": "Carregando conteúdo",
-    "visible_text": "// Carregando dados do terminal"
+  "qa_partner": {
+    "button": "Sortear parceiro",
+    "close_button": "Fechar modal",
+    "description": "Clique no botão para sortear um personagem e ver quais habilidades ele traria para um time de desenvolvimento.",
+    "empty_description": "Seu parceiro ainda não foi escolhido. Sorteie um aliado para investigar bugs, validar fluxos e proteger o deploy.",
+    "empty_title": "Aguardando parceiro",
+    "error": "Não foi possível buscar um parceiro agora. Tente novamente em alguns segundos.",
+    "eyebrow": "PokeAPI + Pair Code",
+    "image_alt": "{{name}}, parceiro de QA sorteado",
+    "loading": "Buscando parceiro...",
+    "result_label": "Parceiro sorteado",
+    "skills": {
+      "agility": "Ritmo de sprint",
+      "attention": "Olho no detalhe",
+      "creativity": "Ideia fora da caixa",
+      "debugging": "Caça-bugs",
+      "energy": "Cafeína de código",
+      "resilience": "Go horse controlado"
+    },
+    "title": "Escolha seu parceiro de Desenvolvimento",
+    "toggle_button_aria": "Abrir parceiro de desenvolvimento"
   },
-  "error404": {
-    "title": "Página não encontrada",
-    "description": "Parece que você tentou acessar uma rota que não existe ou foi movida.",
-    "back_home": "Voltar ao início",
-    "back_home_aria": "Voltar para a página inicial"
+  "resume": {
+    "about": {
+      "description": {
+        "p1": "Olá! Me chamo <1>Amanda Souza</1>, sou desenvolvedora front-end e pós-graduanda em <1>Engenharia de Software</1> pela Universidade de São Paulo (USP). Sou graduada em <1>Análise e Desenvolvimento de Sistemas</1> pelo Instituto Federal de São Paulo (IFSP) e técnica em Informática pela FIEB."
+      },
+      "expertise": {
+        "text": "Tenho interesse especial por desenvolvimento <1>front-end</1>, interfaces acessíveis e qualidade de software. Possuo experiência com <1>Vue.js</1>, <1>React</1>, <1>JavaScript</1>, <1>HTML</1>, <1>CSS</1> e consumo de serviços back-end. Também estou aprofundando meus estudos em <1>QA</1>, com foco em testes, boas práticas e melhoria contínua da qualidade das aplicações.",
+        "title": "Foco de Atuação"
+      },
+      "role": "// Software Developer | Front-end | Explorando o mundo QA",
+      "soft_skills": {
+        "items": [
+          "Atenção aos detalhes",
+          "Comunicação clara",
+          "Organização",
+          "Aprendizado contínuo",
+          "Resolução de problemas",
+          "Autonomia",
+          "Colaboração",
+          "Foco em qualidade",
+          "Responsabilidade nas entregas"
+        ],
+        "title": "Soft Skills"
+      },
+      "stats": {
+        "performance": {
+          "label": "Estudos em testes, boas práticas e qualidade de software",
+          "value": "QA"
+        },
+        "process": {
+          "label": "Interesse em interfaces bonitas, acessíveis e com boa experiência de uso",
+          "value": "UI/UX"
+        },
+        "productivity": {
+          "label": "Experiência com desenvolvimento front-end e interfaces web",
+          "value": "Vue.js, React"
+        }
+      },
+      "title": "Sobre Mim"
+    },
+    "download": {
+      "aria": "Baixar currículo completo em PDF",
+      "label": "DOWNLOAD CV COMPLETO"
+    },
+    "education": {
+      "check": "Verificar",
+      "items": [
+        {
+          "date": "Maio de 2025 - Março de 2027",
+          "link": "https://www.linkedin.com/in/amandalopesdesouza/",
+          "subtitle": "Universidade de São Paulo (USP)",
+          "title": "Pós-graduação Lato Sensu em Engenharia de Software"
+        },
+        {
+          "date": "Março de 2021 - Dezembro de 2023",
+          "link": "https://www.linkedin.com/in/amandalopesdesouza/",
+          "subtitle": "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP)",
+          "title": "Análise e Desenvolvimento de Sistemas"
+        },
+        {
+          "date": "Fevereiro de 2019 - Junho de 2020",
+          "link": "https://www.linkedin.com/in/amandalopesdesouza/",
+          "subtitle": "FIEB - Fundação Instituto de Educação de Barueri",
+          "title": "Ensino Técnico em Informática"
+        }
+      ],
+      "title": "Educação & Certificados"
+    },
+    "experience": {
+      "international": {
+        "activities": [
+          "Participação presencial na Huawei ICT Competition Global Final, na categoria Innovation, em Shenzhen, China.",
+          "Apresentação do projeto Tech Care, assistente virtual direcionado a médicos durante procedimentos cirúrgicos.",
+          "A aplicação permitia consultar imagens laboratoriais por comandos de voz, trazendo mais praticidade para cirurgiões.",
+          "Conquista do 2º lugar mundial na categoria, representando o IFSP e o Brasil na etapa global.",
+          "Matéria IFSP: estudantes do Câmpus Guarulhos finalistas da Huawei ICT Competition - https://ifsp.edu.br/noticias/3722-estudantes-do-campus-guarulhos-sao-finalistas-da-huawei-ict-competition",
+          "Matéria IFSP: Academias do IFSP conecta alunos e empresas de tecnologia - https://www.ifsp.edu.br/eleicoes-coned-2024/17-ultimas-noticias/3840-academias-do-ifsp-conecta-alunos-e-grandes-empresas-de-tecnologia",
+          "Publicação no LinkedIn sobre a Huawei ICT Competition - https://lnkd.in/p/d6Xav4au"
+        ],
+        "company": "Huawei • Shenzhen, Cantão, China",
+        "period": "Maio de 2023",
+        "role": "Vice-campeã da Huawei ICT Competition Global Final (2022-2023)",
+        "stack": "Innovation | Tech Care | Assistente de Voz Web | Saúde | Competição Global",
+        "title": "Trajetória Internacional"
+      },
+      "items": {
+        "backend": {
+          "activities": [
+            "Atuação no desenvolvimento front-end de aplicações voltadas à área da saúde, com foco em interfaces funcionais, acessíveis e bem estruturadas para gestores e profissionais de saúde.",
+            "Membro da equipe de desenvolvimento com uso de metodologia ágil.",
+            "Sustentação de um projeto em Vue.js que futuramente será legado, realizando manutenção, ajustes e evolução de telas existentes.",
+            "Participação na transferência/evolução do novo projeto para React, seguindo prototipagem no Figma e contribuindo para interfaces componentizadas, organização visual e evolução da base front-end.",
+            "Criação de POCs (provas de conceito) para validar soluções, fluxos de interface e viabilidade técnica antes da evolução para implementação final.",
+            "Manutenção e evolução de aplicações com Vue.js, React, JavaScript, HTML e CSS, além do consumo de serviços back-end para integração entre telas e regras de negócio.",
+            "Criação e manutenção de testes E2E com Cypress para validação de fluxos críticos da aplicação.",
+            "Análise e desenvolvimento de software considerando segurança, escalabilidade, testes automatizados e arquitetura orientada a microsserviços.",
+            "Desenvolvimento seguindo boas práticas, padrões de código e fluxo ágil, com atenção à qualidade, usabilidade e melhoria contínua das aplicações.",
+            "Apoio à qualidade das entregas por meio da identificação de bugs, análise de fluxos e atenção à experiência do usuário."
+          ],
+          "company": "Portal Telemedicina • Barueri, São Paulo, Brasil",
+          "period": "Novembro de 2023 - Atual",
+          "role": "Desenvolvedora front-end",
+          "stack": "Vue.js | React | Figma | JavaScript | HTML | CSS | APIs | Sustentação | Front-end | QA | Cypress | Testes E2E"
+        },
+        "frontend": {
+          "activities": [
+            "Membro da equipe de desenvolvimento front-end com uso de metodologia ágil.",
+            "Colaboração no desenvolvimento dos cursos da Fundação Bradesco e em manutenções do site Escola Virtual.",
+            "Identificação de oportunidades de melhoria por meio de boas práticas em desenvolvimento de sistemas.",
+            "Suporte a questões técnicas, orientando e auxiliando na execução de soluções."
+          ],
+          "company": "Fundação Bradesco • Osasco, São Paulo, Brasil",
+          "period": "Agosto de 2021 - Outubro de 2023",
+          "role": "Analista de Sistemas Jr / Estagiária Desenvolvedora de Sistemas",
+          "stack": "Front-end | Metodologia ágil | Escola Virtual | Desenvolvimento de cursos"
+        },
+        "support": {
+          "activities": [
+            "Atuação com suporte técnico e helpdesk, realizando atendimento e resolução de problemas para usuários.",
+            "Contato com fornecedores de produtos para acompanhamento e solução de demandas técnicas.",
+            "Suporte em bilhetagem eletrônica, reparos, configurações de equipamentos e manutenção operacional.",
+            "Experiência inicial importante para desenvolver visão de suporte, diagnóstico de problemas e comunicação com usuários."
+          ],
+          "company": "Grupo Del Rey",
+          "period": "Outubro de 2018 - Agosto de 2021",
+          "role": "Técnico de Suporte Helpdesk",
+          "stack": "Helpdesk | Suporte Técnico | Bilhetagem eletrônica | Infraestrutura | Atendimento"
+        }
+      },
+      "title": "Trajetória Profissional"
+    },
+    "nav": {
+      "about": "Sobre Mim",
+      "education": "Formação",
+      "experience": "Experiência",
+      "skills": "Habilidades"
+    },
+    "skills": {
+      "backend": "Ferramentas & Qualidade",
+      "ecosystem": "Práticas, Dados e Interesses",
+      "frontend": "Front-End & Interface",
+      "subtitle": "// Competências em front-end, análise, dados, QA e UX/UI.",
+      "title": "Habilidades Técnicas"
+    },
+    "title_highlight": "Currículo",
+    "title_main": "Meu"
   },
-  "error500": {
-    "title": "Erro inesperado",
-    "description": "Ocorreu um erro ao carregar os dados. Por favor, tente novamente mais tarde.",
-    "retry_button": "Tentar novamente",
-    "retry_aria": "Recarregar a página"
-  },
-  "footer": {
-    "rights": "Todos os direitos reservados.",
-    "aria_label": "Rodapé"
+  "theme": {
+    "activate_dark": "Ativar tema escuro",
+    "activate_light": "Ativar tema claro",
+    "toggle": "Alternar tema"
   }
 }

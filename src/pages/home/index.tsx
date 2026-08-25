@@ -1,15 +1,17 @@
 import { Button } from "@/components/ui";
 import { LinkedInLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import * as Dialog from "@radix-ui/react-dialog";
 import profileImg from "/assets/amanda-profile.jpg";
-import { ProfileImage } from "@/components";
+import { ProfileImage, QaPartnerCard } from "@/components";
 import { Trans } from "react-i18next";
-import { useTranslate } from "@/hooks";
+import { Gamepad2, X } from "lucide-react";
+import { useHome } from "@/hooks";
 
 const Home = () => {
-    const { t, i18n } = useTranslate();
+    const { changeQaPartnerCardVisibility, i18n, isQaPartnerCardVisible, t } = useHome();
 
     return ( 
-        <main className="flex flex-col justify-center items-center p-6 md:p-8 bg-background text-foreground min-h-screen transition-colors duration-500">
+        <main className="flex flex-col items-center justify-center p-6 md:p-8 bg-background text-foreground min-h-screen transition-colors duration-500">
             <section aria-labelledby="hero-title">
                 <div className="flex flex-col-reverse xl:flex-row items-center gap-10 md:gap-25">
                     <div className="flex flex-col justify-center flex-1 text-center xl:text-left">
@@ -37,6 +39,29 @@ const Home = () => {
                                         <GitHubLogoIcon className="w-6 h-6" aria-hidden="true"/>
                                     </a>
                                 </Button>
+                                <Dialog.Root open={isQaPartnerCardVisible} onOpenChange={changeQaPartnerCardVisibility}>
+                                    <Dialog.Trigger asChild>
+                                        <Button
+                                            type="button"
+                                            className="bg-transparent rounded-full w-12 h-12 border-2 border-dracula-cyan text-dracula-cyan hover:bg-dracula-cyan hover:text-background transition-all"
+                                            aria-label={t("qa_partner.toggle_button_aria")}
+                                        >
+                                            <Gamepad2 className="w-6 h-6" aria-hidden="true" />
+                                        </Button>
+                                    </Dialog.Trigger>
+                                    <Dialog.Portal>
+                                        <Dialog.Overlay className="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=open]:fade-in-0 data-[state=closed]:fade-out-0" />
+                                        <Dialog.Content className="fixed left-1/2 top-1/2 z-50 max-h-[90vh] w-[calc(100vw-2rem)] max-w-5xl -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-3xl bg-[#15151b] p-4 shadow-[0_24px_90px_rgba(0,0,0,0.7)] outline-none ring-1 ring-white/10 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=open]:fade-in-0 data-[state=closed]:fade-out-0 data-[state=open]:zoom-in-95 data-[state=closed]:zoom-out-95 sm:p-5">
+                                            <Dialog.Title className="sr-only">{t("qa_partner.title")}</Dialog.Title>
+                                            <Dialog.Description className="sr-only">{t("qa_partner.description")}</Dialog.Description>
+                                            <QaPartnerCard />
+                                            <Dialog.Close className="absolute right-5 top-5 z-10 grid h-9 w-9 cursor-pointer place-items-center rounded-full bg-[#24242c] text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dracula-cyan">
+                                                <X className="h-5 w-5" aria-hidden="true" />
+                                                <span className="sr-only">{t("qa_partner.close_button")}</span>
+                                            </Dialog.Close>
+                                        </Dialog.Content>
+                                    </Dialog.Portal>
+                                </Dialog.Root>
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,4 @@
 import { Outlet } from "react-router";
-import { CoffeeWidget } from "@/components";
 import { Footer, Header } from "./components";
 
 const Layout = () => {
@@ -12,7 +11,6 @@ const Layout = () => {
       </main>
 
       <Footer />
-      <CoffeeWidget />
     </div>
   );
 };

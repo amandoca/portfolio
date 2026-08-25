@@ -35,20 +35,6 @@
   }
 }
 
-@keyframes coffee-steam {
-  0% {
-    opacity: 0;
-    transform: translateY(6px) scale(0.85);
-  }
-  40% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-8px) scale(1.1);
-  }
-}
-
   .loading-dot {
     animation: loading-dots 1.2s infinite ease-in-out;
     display: inline-block;
@@ -71,16 +57,6 @@
     animation: system-loader-progress 1.4s ease-in-out infinite alternate;
     transform-origin: left;
     width: 100%;
-  }
-
-  .coffee-steam {
-    animation: coffee-steam 1.9s ease-in-out infinite;
-    background: currentColor;
-    border-radius: 9999px;
-    height: 12px;
-    position: absolute;
-    top: 0;
-    width: 2px;
   }
 
   .animation-delay-200 {
