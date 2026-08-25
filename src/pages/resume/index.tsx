@@ -23,6 +23,7 @@ const Resume = () => {
     navItems,
     renderTimelineText,
     showResumeSection,
+    softSkills,
     t,
     view,
   } = useResume();
@@ -54,7 +55,7 @@ const Resume = () => {
                   expertiseTitle={t("resume.about.expertise.title")}
                   language={i18n.language}
                   role={t("resume.about.role")}
-                  softSkills={t("resume.about.soft_skills.items", { returnObjects: true }) as string[]}
+                  softSkills={softSkills}
                   softSkillsTitle={t("resume.about.soft_skills.title")}
                   stats={aboutStats}
                   title={t("resume.about.title")}

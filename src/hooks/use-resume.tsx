@@ -119,6 +119,7 @@ export function useResume() {
     subtitle: string;
     title: string;
   }[];
+  const softSkills = t("resume.about.soft_skills.items", { returnObjects: true }) as string[];
 
   return {
     aboutDescriptionKey,
@@ -134,6 +135,7 @@ export function useResume() {
     navItems,
     renderTimelineText,
     showResumeSection,
+    softSkills,
     t,
     view,
   };

@@ -41,8 +41,8 @@ export const ResumeItem = ({
           
           {tasks && (
             <ul className="space-y-2 text-sm text-muted-foreground mt-3">
-              {tasks.map((task, index) => (
-                <li key={index} className="flex items-start gap-2">
+              {tasks.map((task) => (
+                <li key={task} className="flex items-start gap-2">
                   <span className="text-dracula-orange font-bold">▹</span> {task}
                 </li>
               ))}

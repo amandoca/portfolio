@@ -42,7 +42,7 @@ const Error500 = () => {
           shadow-lg shadow-dracula-red/30
           transition-all duration-300
         "
-        aria-label={t("error.retry_aria")}
+        aria-label={t("error500.retry_aria")}
       >
         <RotateCcw className="w-5 h-5 transition-transform group-hover:-rotate-180" aria-hidden="true"/>
         <span className="font-semibold tracking-wide">

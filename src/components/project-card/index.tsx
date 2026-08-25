@@ -5,8 +5,6 @@ import { useTranslate, type ProjectProps } from "@/hooks";
 
 export const ProjectCard = ({ project }: {project: ProjectProps} ) => {
     const { t } = useTranslate();
-    const repositoryNameParts = project.githubUrl.split("/").filter(Boolean);
-    const repositoryName = repositoryNameParts[repositoryNameParts.length - 1];
 
     return (
         <article
@@ -30,7 +28,7 @@ export const ProjectCard = ({ project }: {project: ProjectProps} ) => {
                         <div className="flex items-center gap-3 text-foreground">
                             <Braces className="h-7 w-7 shrink-0 text-dracula-primary" aria-hidden="true" />
                             <p className="min-w-0 text-sm xs:text-base sm:text-2xl font-bold break-all leading-tight">
-                                {repositoryName}
+                                {project.repositoryName}
                             </p>
                         </div>
                     </div>

@@ -9,12 +9,34 @@ export interface ProjectProps {
   githubUrl: string;
   liveUrl: string;
   isPrivate: boolean;
+  repositoryName: string;
+}
+
+interface ProjectTranslation {
+  description: string;
+  githubUrl: string;
+  id: number;
+  isPrivate: boolean;
+  liveUrl: string;
+  status: "completed" | "in-progress" | "maintenance";
+  tags: string[];
+  title: string;
+}
+
+function getRepositoryNameFromGithubUrl(githubUrl: string) {
+  const repositoryNameParts = githubUrl.split("/").filter(Boolean);
+
+  return repositoryNameParts[repositoryNameParts.length - 1];
 }
 
 export function useProjects() {
   const { t } = useTranslate();
 
-  const projects = t("projects.list", { returnObjects: true }) as ProjectProps[];
+  const translatedProjects = t("projects.list", { returnObjects: true }) as ProjectTranslation[];
+  const projects = translatedProjects.map((project) => ({
+    ...project,
+    repositoryName: getRepositoryNameFromGithubUrl(project.githubUrl),
+  }));
 
   return {
     projects,
