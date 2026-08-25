@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay, A11y } from 'swiper/modules';
+import { Navigation, A11y } from 'swiper/modules';
 import { ProjectCard } from "@/components";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useProjects } from '@/hooks';
@@ -23,9 +23,9 @@ const Projects = () => {
                     </span>
                 </h1>
 
-                <div className="relative">
+                <div className="relative pb-16">
                     <Swiper
-                        modules={[Navigation, Autoplay, A11y]}
+                        modules={[Navigation, A11y]}
                         slidesPerView={1}
                         spaceBetween={50}
                         simulateTouch={false}
@@ -33,7 +33,6 @@ const Projects = () => {
                             prevEl: ".projects-carousel-button-prev",
                             nextEl: ".projects-carousel-button-next",
                         }}
-                        autoplay={{ delay: 8000, disableOnInteraction: false, pauseOnMouseEnter: true }}
                         a11y={{
                             prevSlideMessage: t("projects.carousel.prev"),
                             nextSlideMessage: t("projects.carousel.next"),
@@ -54,7 +53,7 @@ const Projects = () => {
 
                     <button
                         type="button"
-                        className="projects-carousel-button-prev absolute left-0 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-dracula-green/70 bg-background/90 text-dracula-green shadow-profile-glow transition-colors hover:bg-dracula-green hover:text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dracula-green focus-visible:ring-offset-2 focus-visible:ring-offset-background md:left-4"
+                        className="projects-carousel-button-prev absolute bottom-0 left-1/2 z-10 flex h-11 w-11 -translate-x-14 cursor-pointer items-center justify-center rounded-full border border-dracula-cyan/60 bg-background/95 text-dracula-cyan transition-colors hover:bg-dracula-cyan hover:text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dracula-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                         aria-label={t("projects.carousel.prev")}
                     >
                         <ChevronLeft aria-hidden="true" className="h-6 w-6" />
@@ -62,7 +61,7 @@ const Projects = () => {
 
                     <button
                         type="button"
-                        className="projects-carousel-button-next absolute right-0 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-dracula-green/70 bg-background/90 text-dracula-green shadow-profile-glow transition-colors hover:bg-dracula-green hover:text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dracula-green focus-visible:ring-offset-2 focus-visible:ring-offset-background md:right-4"
+                        className="projects-carousel-button-next absolute bottom-0 left-1/2 z-10 flex h-11 w-11 translate-x-3 cursor-pointer items-center justify-center rounded-full border border-dracula-cyan/60 bg-background/95 text-dracula-cyan transition-colors hover:bg-dracula-cyan hover:text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dracula-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                         aria-label={t("projects.carousel.next")}
                     >
                         <ChevronRight aria-hidden="true" className="h-6 w-6" />

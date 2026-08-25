@@ -5,5 +5,6 @@ export { ModeToggle } from "./mode-toggle";
 export { default as NotFound } from "./not-found";
 export * from "./profile-image";
 export * from "./project-card";
-export { default as QaPartnerCard } from "./qa-partner-card";
+export { default as DevelopmentPartnerCard } from "./development-partner-card";
+export { default as DevelopmentPartnerWidget } from "./development-partner-widget";
 export * from "./timeline-item";

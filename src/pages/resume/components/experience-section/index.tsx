@@ -31,7 +31,7 @@ export function ExperienceSection({
   title,
 }: ExperienceSectionProps) {
   return (
-    <div className="flex flex-col h-full space-y-6 animate-in fade-in duration-500">
+    <div className="flex flex-col h-full space-y-6">
       <h3 className="text-3xl font-bold text-dracula-cyan">{title}</h3>
 
       <div className="flex-1 overflow-y-auto pr-4 custom-scrollbar">

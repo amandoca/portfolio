@@ -38,14 +38,14 @@ const Resume = () => {
           onSelectSection={showResumeSection}
         />
 
-        <div className="flex-1 w-full bg-card p-8 rounded-2xl border border-border min-h-125 transition-colors">
+        <div className="flex-1 w-full bg-card p-6 sm:p-8 rounded-xl border border-border min-h-125 transition-colors">
           <AnimatePresence mode="wait">
             <motion.div
               key={view}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
-              transition={{ duration: 0.3 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.18 }}
             >
               {view === "sobre-mim" && (
                 <AboutSection

@@ -23,17 +23,17 @@ interface PokeApiPokemonResponse {
   stats: PokeApiStatResponse[];
 }
 
-interface QaPartnerSkill {
+interface DevelopmentPartnerSkill {
   label: string;
   progressWidth: string;
   value: number;
 }
 
-interface QaPartner {
+interface DevelopmentPartner {
   id: number;
   imageUrl: string;
   name: string;
-  skills: QaPartnerSkill[];
+  skills: DevelopmentPartnerSkill[];
 }
 
 function getRandomClassicPokemonId() {
@@ -47,31 +47,31 @@ function formatPokemonName(pokemonName: string) {
     .join(" ");
 }
 
-function getQaSkillTranslationKeyByStatName(statName: string) {
+function getDevelopmentSkillTranslationKeyByStatName(statName: string) {
   if (statName === "hp") {
-    return "qa_partner.skills.energy";
+    return "development_partner.skills.energy";
   }
 
   if (statName === "attack") {
-    return "qa_partner.skills.debugging";
+    return "development_partner.skills.debugging";
   }
 
   if (statName === "defense") {
-    return "qa_partner.skills.resilience";
+    return "development_partner.skills.resilience";
   }
 
   if (statName === "special-attack") {
-    return "qa_partner.skills.creativity";
+    return "development_partner.skills.creativity";
   }
 
   if (statName === "special-defense") {
-    return "qa_partner.skills.attention";
+    return "development_partner.skills.attention";
   }
 
-  return "qa_partner.skills.agility";
+  return "development_partner.skills.agility";
 }
 
-function getQaSkillProgressWidth(statValue: number) {
+function getDevelopmentSkillProgressWidth(statValue: number) {
   if (statValue > 100) {
     return "100%";
   }
@@ -79,17 +79,17 @@ function getQaSkillProgressWidth(statValue: number) {
   return `${statValue}%`;
 }
 
-export function useQaPartner() {
+export function useDevelopmentPartner() {
   const { t } = useTranslate();
 
   const [hasRequestError, setHasRequestError] = useState(false);
-  const [isLoadingQaPartner, setIsLoadingQaPartner] = useState(false);
-  const [qaPartner, setQaPartner] = useState<QaPartner>();
+  const [isLoadingDevelopmentPartner, setIsLoadingDevelopmentPartner] = useState(false);
+  const [developmentPartner, setDevelopmentPartner] = useState<DevelopmentPartner>();
 
-  function transformPokemonResponseToQaPartner(pokemonResponse: PokeApiPokemonResponse) {
-    const qaPartnerSkills = pokemonResponse.stats.map((pokemonStat) => ({
-      label: t(getQaSkillTranslationKeyByStatName(pokemonStat.stat.name)),
-      progressWidth: getQaSkillProgressWidth(pokemonStat.base_stat),
+  function transformPokemonResponseToDevelopmentPartner(pokemonResponse: PokeApiPokemonResponse) {
+    const developmentPartnerSkills = pokemonResponse.stats.map((pokemonStat) => ({
+      label: t(getDevelopmentSkillTranslationKeyByStatName(pokemonStat.stat.name)),
+      progressWidth: getDevelopmentSkillProgressWidth(pokemonStat.base_stat),
       value: pokemonStat.base_stat,
     }));
 
@@ -97,13 +97,13 @@ export function useQaPartner() {
       id: pokemonResponse.id,
       imageUrl: pokemonResponse.sprites.other["official-artwork"].front_default,
       name: formatPokemonName(pokemonResponse.name),
-      skills: qaPartnerSkills,
+      skills: developmentPartnerSkills,
     };
   }
 
-  async function fetchRandomQaPartner() {
+  async function fetchRandomDevelopmentPartner() {
     setHasRequestError(false);
-    setIsLoadingQaPartner(true);
+    setIsLoadingDevelopmentPartner(true);
 
     try {
       // Sorteia um Pokémon clássico para manter a brincadeira reconhecível.
@@ -115,21 +115,21 @@ export function useQaPartner() {
       }
 
       const pokemonResponse: PokeApiPokemonResponse = await pokemonApiResponse.json();
-      const nextQaPartner = transformPokemonResponseToQaPartner(pokemonResponse);
+      const nextDevelopmentPartner = transformPokemonResponseToDevelopmentPartner(pokemonResponse);
 
-      setQaPartner(nextQaPartner);
+      setDevelopmentPartner(nextDevelopmentPartner);
     } catch {
       setHasRequestError(true);
     } finally {
-      setIsLoadingQaPartner(false);
+      setIsLoadingDevelopmentPartner(false);
     }
   }
 
   return {
-    fetchRandomQaPartner,
+    fetchRandomDevelopmentPartner,
     hasRequestError,
-    isLoadingQaPartner,
-    qaPartner,
+    isLoadingDevelopmentPartner,
+    developmentPartner,
     t,
   };
 }

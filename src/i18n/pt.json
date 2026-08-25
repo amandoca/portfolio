@@ -1,4 +1,26 @@
 {
+  "development_partner": {
+    "button": "Sortear parceiro",
+    "close_button": "Fechar modal",
+    "description": "Sorteie um personagem da PokeAPI e veja como ele entraria no time.",
+    "empty_description": "Nenhum parceiro escolhido ainda. Clique no botão e veja quem aparece.",
+    "empty_title": "Aguardando parceiro",
+    "error": "Não foi possível buscar um parceiro agora. Tente novamente em alguns segundos.",
+    "eyebrow": "PokeAPI + Pair Code",
+    "image_alt": "{{name}}, parceiro de desenvolvimento sorteado",
+    "loading": "Buscando parceiro...",
+    "result_label": "Parceiro sorteado",
+    "skills": {
+      "agility": "Ritmo de sprint",
+      "attention": "Olho no detalhe",
+      "creativity": "Ideia fora da caixa",
+      "debugging": "Caça-bugs",
+      "energy": "Cafeína de código",
+      "resilience": "Go horse controlado"
+    },
+    "title": "Escolha seu parceiro de Desenvolvimento",
+    "toggle_button_aria": "Abrir parceiro de desenvolvimento"
+  },
   "error404": {
     "back_home": "Voltar ao início",
     "back_home_aria": "Voltar para a página inicial",
@@ -32,7 +54,45 @@
       "experience": "Anos de <1/> experiência",
       "projects": "Projetos <1/> robustos",
       "repositories": "Repositórios"
-    }
+    },
+    "typewriter_segments": [
+      {
+        "highlight": false,
+        "text": "// Desenvolvedora "
+      },
+      {
+        "highlight": true,
+        "text": "front-end"
+      },
+      {
+        "highlight": false,
+        "text": " e aprendendo "
+      },
+      {
+        "highlight": true,
+        "text": "QA"
+      },
+      {
+        "highlight": false,
+        "text": ",\ntransformando café em "
+      },
+      {
+        "highlight": true,
+        "text": "código"
+      },
+      {
+        "highlight": false,
+        "text": " e bugs em "
+      },
+      {
+        "highlight": true,
+        "text": "casos de teste"
+      },
+      {
+        "highlight": false,
+        "text": "."
+      }
+    ]
   },
   "loading": {
     "sr_text": "Carregando conteúdo",
@@ -65,7 +125,7 @@
     "github": "GitHub",
     "list": [
       {
-        "description": "Sistema POS web para operação de vendas e painel administrativo, desenvolvido com React, TypeScript, Vite e Firebase. O projeto também é usado para estudar controle de estado com TanStack Query, Redux e Redux Saga.",
+        "description": "Sistema POS web para vendas e painel administrativo, feito com React, TypeScript, Vite e Firebase. Também uso esse projeto para praticar controle de estado com TanStack Query, Redux e Redux Saga.",
         "githubUrl": "https://github.com/amandoca/web-pos",
         "id": 1,
         "isPrivate": false,
@@ -86,7 +146,7 @@
         "title": "Web POS"
       },
       {
-        "description": "Aplicação full stack para gerenciamento de tarefas em Kanban, com colaboração entre usuários, autenticação JWT, Vue.js, Node.js, Express e MySQL. Projeto focado em organização de fluxo, produtividade e integração entre front-end e back-end.",
+        "description": "Aplicação full stack para gerenciamento de tarefas em Kanban, com colaboração entre usuários e autenticação JWT. O projeto integra Vue.js no front-end com Node.js, Express e MySQL no back-end.",
         "githubUrl": "https://github.com/amandoca/gerenciador-de-tarefas",
         "id": 2,
         "isPrivate": false,
@@ -105,7 +165,7 @@
         "title": "Gerenciador de Tarefas"
       },
       {
-        "description": "POCs para comparar APIs de Speech-to-Text com Amazon Transcribe, Azure Speech, Google Cloud Speech-to-Text e OpenAI Whisper. O projeto explora integração com serviços externos e análise de alternativas técnicas para transcrição de áudio.",
+        "description": "POCs para comparar APIs de Speech-to-Text, incluindo Amazon Transcribe, Azure Speech, Google Cloud Speech-to-Text e OpenAI Whisper. A ideia foi testar integrações e entender diferenças entre serviços de transcrição.",
         "githubUrl": "https://github.com/amandoca/Speech-to-Text-APIs",
         "id": 3,
         "isPrivate": false,
@@ -124,7 +184,7 @@
         "title": "Speech to Text APIs"
       },
       {
-        "description": "Desafios práticos da Formação UX Designer da DIO, com wireframe, design system e protótipo navegável criados no Figma para uma loja online de livros. Projeto voltado à prática de UX/UI, estrutura visual e prototipação.",
+        "description": "Desafios práticos da Formação UX Designer da DIO, com wireframe, design system e protótipo navegável no Figma para uma loja online de livros.",
         "githubUrl": "https://github.com/amandoca/formacao-ux-designer-dio",
         "id": 4,
         "isPrivate": false,
@@ -142,7 +202,7 @@
         "title": "Formação UX Designer DIO"
       },
       {
-        "description": "API REST para gerenciamento de usuários e tarefas, desenvolvida com C#, ASP.NET Core Web API, Entity Framework Core e SQL Server. Projeto com foco em estrutura back-end, endpoints, persistência de dados e documentação com Swagger.",
+        "description": "API REST para gerenciamento de usuários e tarefas, desenvolvida com C#, ASP.NET Core Web API, Entity Framework Core e SQL Server. Inclui endpoints, persistência de dados e documentação com Swagger.",
         "githubUrl": "https://github.com/amandoca/SistemaDeTarefas",
         "id": 5,
         "isPrivate": false,
@@ -160,7 +220,7 @@
         "title": "Sistema de Tarefas"
       },
       {
-        "description": "Projeto web sobre bilhetagem eletrônica. A aplicação funciona como um CRUD para gerenciamento de dados do sistema, permitindo cadastrar, listar, editar e excluir registros relacionados à operação de bilhetagem, com estrutura em ASP.NET MVC, C#, Entity Framework e SQL Server.",
+        "description": "Projeto web sobre bilhetagem eletrônica. A aplicação funciona como um CRUD para cadastrar, listar, editar e excluir registros do sistema, usando ASP.NET MVC, C#, Entity Framework e SQL Server.",
         "githubUrl": "https://github.com/amandoca/TCC_ITB_Bilhetagem_Eletronica",
         "id": 6,
         "isPrivate": false,
@@ -181,7 +241,7 @@
         "title": "Bilhetagem Eletrônica"
       },
       {
-        "description": "Aplicação web iniciada em equipe para a Huawei ICT Competition e posteriormente evoluída como Trabalho de Conclusão de Curso. O sistema ADA apoia profissionais da saúde na visualização de informações do paciente e imagens de exames por comandos de voz, incluindo o comando \"ADA\", integração com APIs externas e serviços AWS via Amazon API Gateway. Repositório privado no GitHub por ser fork do projeto original.",
+        "description": "Aplicação web iniciada em equipe para a Huawei ICT Competition e depois evoluída como Trabalho de Conclusão de Curso. O sistema ADA ajuda profissionais da saúde a visualizar dados do paciente e imagens de exames por comandos de voz, com integrações externas e serviços AWS via Amazon API Gateway. Repositório privado no GitHub por ser fork do projeto original.",
         "githubUrl": "https://github.com/amandoca/web-ada",
         "id": 7,
         "isPrivate": true,
@@ -200,6 +260,25 @@
           "APIs"
         ],
         "title": "Web Ada"
+      },
+      {
+        "description": "Meu portfólio pessoal, desenvolvido com React, TypeScript, Vite e Tailwind CSS. O projeto reúne minha trajetória, habilidades, projetos do GitHub e uma interação com a PokeAPI para deixar a navegação mais divertida.",
+        "githubUrl": "https://github.com/amandoca/portfolio",
+        "id": 8,
+        "isPrivate": false,
+        "liveUrl": "",
+        "status": "in-progress",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Vite",
+          "Tailwind CSS",
+          "i18n",
+          "PokeAPI",
+          "Responsividade",
+          "Portfólio"
+        ],
+        "title": "Portfolio"
       }
     ],
     "liveDeploy": "Deploy do projeto",
@@ -214,28 +293,6 @@
     "title_main": "Meus",
     "usedTech": "Tecnologias utilizadas:",
     "viewGithub": "Ver projeto {{title}} no GitHub"
-  },
-  "qa_partner": {
-    "button": "Sortear parceiro",
-    "close_button": "Fechar modal",
-    "description": "Clique no botão para sortear um personagem e ver quais habilidades ele traria para um time de desenvolvimento.",
-    "empty_description": "Seu parceiro ainda não foi escolhido. Sorteie um aliado para investigar bugs, validar fluxos e proteger o deploy.",
-    "empty_title": "Aguardando parceiro",
-    "error": "Não foi possível buscar um parceiro agora. Tente novamente em alguns segundos.",
-    "eyebrow": "PokeAPI + Pair Code",
-    "image_alt": "{{name}}, parceiro de QA sorteado",
-    "loading": "Buscando parceiro...",
-    "result_label": "Parceiro sorteado",
-    "skills": {
-      "agility": "Ritmo de sprint",
-      "attention": "Olho no detalhe",
-      "creativity": "Ideia fora da caixa",
-      "debugging": "Caça-bugs",
-      "energy": "Cafeína de código",
-      "resilience": "Go horse controlado"
-    },
-    "title": "Escolha seu parceiro de Desenvolvimento",
-    "toggle_button_aria": "Abrir parceiro de desenvolvimento"
   },
   "resume": {
     "about": {
@@ -299,7 +356,7 @@
         {
           "date": "Fevereiro de 2019 - Junho de 2020",
           "link": "https://www.linkedin.com/in/amandalopesdesouza/",
-          "subtitle": "FIEB - Fundação Instituto de Educação de Barueri",
+          "subtitle": "Fundação Instituto de Educação de Barueri - FIEB",
           "title": "Ensino Técnico em Informática"
         }
       ],
