@@ -23,7 +23,3 @@ npm run dev
 - `npm run dev`: inicia o projeto localmente.
 - `npm run build`: gera a versão de produção.
 - `npm run lint`: executa a análise estática.
-
-## Projetos em destaque
-
-- **Web POS**: sistema POS web com fluxo do operador e painel administrativo, usando React, TypeScript, Vite, Firebase, TanStack Query, Redux Toolkit, React Redux e Redux Saga.
