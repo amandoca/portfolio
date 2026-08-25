@@ -49,6 +49,6 @@
     "@tailwindcss/oxide-linux-x64-gnu": "^4.1.18"
   },
   "engines": {
-    "node": ">=20.19.0"
+    "node": "20.x"
   }
 }
