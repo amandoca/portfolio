@@ -1,26 +1,29 @@
-# Portfolio Amanda
+# Amanda Souza | Portfolio
 
-Portfolio pessoal baseado em React, Vite, TypeScript e Tailwind CSS.
+Portfolio pessoal para apresentar minha trajetória, habilidades técnicas e projetos.
 
-Repositório: https://github.com/amandoca/portfolio
+## Stack
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- i18next
+- Motion
 
 ## Como rodar
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
 
 ## Scripts
 
-- `pnpm dev`: inicia o ambiente local.
-- `pnpm build`: gera a versão de produção.
-- `pnpm lint`: executa a análise estática.
+- `npm run dev`: inicia o projeto localmente.
+- `npm run build`: gera a versão de produção.
+- `npm run lint`: executa a análise estática.
 
 ## Projetos em destaque
 
-- **Web POS**: sistema POS web com fluxo do operador e painel administrativo. O projeto usa React, TypeScript, Vite, Firebase, TanStack Query, Redux Toolkit, React Redux e Redux Saga.
-
-## Status
-
-Base inicial zerada para personalização.
+- **Web POS**: sistema POS web com fluxo do operador e painel administrativo, usando React, TypeScript, Vite, Firebase, TanStack Query, Redux Toolkit, React Redux e Redux Saga.
