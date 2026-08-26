@@ -53,7 +53,7 @@ const Projects = () => {
 
                     <button
                         type="button"
-                        className="projects-carousel-button-prev absolute left-1 top-[40%] z-10 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-dracula-cyan/60 bg-background/95 text-dracula-cyan transition-colors hover:bg-dracula-cyan hover:text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dracula-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-0 sm:left-1/2 sm:top-auto sm:h-11 sm:w-11 sm:-translate-x-14 sm:translate-y-0"
+                        className="projects-carousel-button-prev absolute left-1 top-38 z-10 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-dracula-cyan/60 bg-background/95 text-dracula-cyan transition-colors hover:bg-dracula-cyan hover:text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dracula-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-0 sm:left-1/2 sm:top-auto sm:h-11 sm:w-11 sm:-translate-x-14 sm:translate-y-0"
                         aria-label={t("projects.carousel.prev")}
                     >
                         <ChevronLeft aria-hidden="true" className="h-6 w-6" />
@@ -61,7 +61,7 @@ const Projects = () => {
 
                     <button
                         type="button"
-                        className="projects-carousel-button-next absolute right-1 top-[40%] z-10 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-dracula-cyan/60 bg-background/95 text-dracula-cyan transition-colors hover:bg-dracula-cyan hover:text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dracula-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-0 sm:left-1/2 sm:right-auto sm:top-auto sm:h-11 sm:w-11 sm:translate-x-3 sm:translate-y-0"
+                        className="projects-carousel-button-next absolute right-1 top-38 z-10 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-dracula-cyan/60 bg-background/95 text-dracula-cyan transition-colors hover:bg-dracula-cyan hover:text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dracula-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-0 sm:left-1/2 sm:right-auto sm:top-auto sm:h-11 sm:w-11 sm:translate-x-3 sm:translate-y-0"
                         aria-label={t("projects.carousel.next")}
                     >
                         <ChevronRight aria-hidden="true" className="h-6 w-6" />
