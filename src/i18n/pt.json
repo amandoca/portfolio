@@ -96,6 +96,10 @@
   },
   "loading": {
     "sr_text": "Carregando conteúdo",
+    "terminal_lines": [
+      "sudo apt install cafe",
+      "npm run abrir-portfolio"
+    ],
     "visible_text": "// Carregando dados do terminal"
   },
   "navbar": {

@@ -96,6 +96,10 @@
   },
   "loading": {
     "sr_text": "Loading content",
+    "terminal_lines": [
+      "sudo apt install coffee",
+      "npm run open-portfolio"
+    ],
     "visible_text": "// Loading terminal data"
   },
   "navbar": {
