@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npx -y node@20 ./node_modules/vite/bin/vite.js",
-    "build": "npx -y node@20 ./node_modules/typescript/bin/tsc -b && npx -y node@20 ./node_modules/vite/bin/vite.js build",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "npx -y node@20 ./node_modules/vite/bin/vite.js preview"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
@@ -49,6 +49,6 @@
     "@tailwindcss/oxide-linux-x64-gnu": "^4.1.18"
   },
   "engines": {
-    "node": "20.x"
+    "node": "24.x"
   }
 }
